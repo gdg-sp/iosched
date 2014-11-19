@@ -22,10 +22,6 @@
     android:versionName="2.2.3"
     android:installLocation="auto">
 
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="21" />
-
     <permission
         android:name="br.com.devfest.sp.permission.WRITE_SCHEDULE"
         android:protectionLevel="normal"
