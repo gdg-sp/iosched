@@ -54,7 +54,7 @@ public class Config {
     // data to avoid the Schedule UI breaking if some session is incorrectly set to a wrong date.
     public static final int CONFERENCE_YEAR = 2014;
 
-    public static final long[][] CONFERENCE_DAYS = new long[][] {
+    public static final long[][] CONFERENCE_DAYS = new long[][]{
             // start and end of day 1
             {ParserUtils.parseTime("2014-11-22T08:00:00.000Z"),
                     ParserUtils.parseTime("2014-11-22T19:30:00.000Z")},
@@ -66,7 +66,7 @@ public class Config {
     public static final TimeZone CONFERENCE_TIMEZONE = TimeZone.getTimeZone("America/Sao_Paulo");
 
     public static final long CONFERENCE_START_MILLIS = CONFERENCE_DAYS[0][0];
-    public static final long CONFERENCE_END_MILLIS = CONFERENCE_DAYS[CONFERENCE_DAYS.length-1][1];
+    public static final long CONFERENCE_END_MILLIS = CONFERENCE_DAYS[CONFERENCE_DAYS.length - 1][1];
 
     // shorthand for some units of time
     public static final long SECOND_MILLIS = 1000;
@@ -196,7 +196,7 @@ public class Config {
         public static final String SPECIAL_KEYNOTE = "FLAG_KEYNOTE";
 
         public static final String[] EXPLORE_CATEGORIES =
-                { CATEGORY_THEME, CATEGORY_TOPIC, CATEGORY_TYPE };
+                {CATEGORY_THEME, CATEGORY_TOPIC, CATEGORY_TYPE};
 
         public static final int[] EXPLORE_CATEGORY_ALL_STRING = {
                 R.string.all_themes, R.string.all_topics, R.string.all_types
@@ -228,7 +228,7 @@ public class Config {
 
 
     // Profile URLs for simulated badge reads for the debug feature.
-    public static final String[] DEBUG_SIMULATED_BADGE_URLS = new String[] {};
+    public static final String[] DEBUG_SIMULATED_BADGE_URLS = new String[]{};
 
     private static String piece(String s, char start, char end) {
         int startIndex = s.indexOf(start), endIndex = s.indexOf(end);
