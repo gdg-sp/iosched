@@ -54,19 +54,22 @@ public class Config {
     // data to avoid the Schedule UI breaking if some session is incorrectly set to a wrong date.
     public static final int CONFERENCE_YEAR = 2014;
 
-    public static final long[][] CONFERENCE_DAYS = new long[][]{
-            // start and end of day 1
+    public static final long[][] CONFERENCE_TRACKS = new long[][]{
+            // start and end of track 1
             {ParserUtils.parseTime("2014-11-22T08:00:00.000Z"),
                     ParserUtils.parseTime("2014-11-22T19:30:00.000Z")},
-            // start and end of day 2
+            // start and end of track 2
+            {ParserUtils.parseTime("2014-11-22T08:00:00.000Z"),
+                    ParserUtils.parseTime("2014-11-22T19:30:00.000Z")},
+            // start and end of track 3
             {ParserUtils.parseTime("2014-11-22T08:00:00.000Z"),
                     ParserUtils.parseTime("2014-11-22T19:30:00.000Z")},
     };
 
     public static final TimeZone CONFERENCE_TIMEZONE = TimeZone.getTimeZone("America/Sao_Paulo");
 
-    public static final long CONFERENCE_START_MILLIS = CONFERENCE_DAYS[0][0];
-    public static final long CONFERENCE_END_MILLIS = CONFERENCE_DAYS[CONFERENCE_DAYS.length - 1][1];
+    public static final long CONFERENCE_START_MILLIS = CONFERENCE_TRACKS[0][0];
+    public static final long CONFERENCE_END_MILLIS = CONFERENCE_TRACKS[CONFERENCE_TRACKS.length - 1][1];
 
     // shorthand for some units of time
     public static final long SECOND_MILLIS = 1000;

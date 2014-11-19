@@ -79,7 +79,7 @@ public class MyScheduleActivity extends BaseActivity implements MyScheduleFragme
     // items. We have one adapter per day of the conference. When we push new data into these
     // adapters, the corresponding UIs update automatically.
     private MyScheduleAdapter[] mScheduleAdapters = new MyScheduleAdapter[
-            Config.CONFERENCE_DAYS.length];
+            Config.CONFERENCE_TRACKS.length];
 
     // The ScheduleHelper is responsible for feeding data in a format suitable to the Adapter.
     private ScheduleHelper mDataHelper;
@@ -139,7 +139,7 @@ public class MyScheduleActivity extends BaseActivity implements MyScheduleFragme
         mWideMode = findViewById(R.id.my_schedule_first_day) != null;
 
         int i;
-        for (i = 0; i < Config.CONFERENCE_DAYS.length; i++) {
+        for (i = 0; i < Config.CONFERENCE_TRACKS.length; i++) {
             mScheduleAdapters[i] = new MyScheduleAdapter(this, getLUtils());
         }
 
@@ -155,10 +155,10 @@ public class MyScheduleActivity extends BaseActivity implements MyScheduleFragme
             TextView firstDayHeaderView = (TextView) findViewById(R.id.day_label_first_day);
             TextView secondDayHeaderView = (TextView) findViewById(R.id.day_label_second_day);
             if (firstDayHeaderView != null) {
-                firstDayHeaderView.setText(getDayName(0));
+                firstDayHeaderView.setText(getTrackName(0));
             }
             if (secondDayHeaderView != null) {
-                secondDayHeaderView.setText(getDayName(1));
+                secondDayHeaderView.setText(getTrackName(1));
             }
         } else {
             // it's PagerAdapter set.
@@ -189,7 +189,7 @@ public class MyScheduleActivity extends BaseActivity implements MyScheduleFragme
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                         mSlidingTabLayout.announceForAccessibility(
                                 getString(R.string.my_schedule_page_desc_a11y,
-                                        getDayName(position)));
+                                        getTrackName(position)));
                     }
                 }
 
@@ -209,8 +209,8 @@ public class MyScheduleActivity extends BaseActivity implements MyScheduleFragme
         super.onPostCreate(savedInstanceState);
         if (mViewPager != null) {
             long now = UIUtils.getCurrentTime(this);
-            for (int i = 0; i < Config.CONFERENCE_DAYS.length; i++) {
-                if (now >= Config.CONFERENCE_DAYS[i][0] && now <= Config.CONFERENCE_DAYS[i][1]) {
+            for (int i = 0; i < Config.CONFERENCE_TRACKS.length; i++) {
+                if (now >= Config.CONFERENCE_TRACKS[i][0] && now <= Config.CONFERENCE_TRACKS[i][1]) {
                     mViewPager.setCurrentItem(i);
                     setTimerToUpdateUI(i);
                     break;
@@ -232,19 +232,30 @@ public class MyScheduleActivity extends BaseActivity implements MyScheduleFragme
         }
     }
 
-    private String getDayName(int position) {
-        if (position >= 0 && position < Config.CONFERENCE_DAYS.length) {
-            long timestamp = Config.CONFERENCE_DAYS[position][0];
-            return TimeUtils.formatHumanFriendlyShortDate(this, timestamp);
-        } else {
-            return "";
+    private String getTrackName(int position) {
+        // FIXME: these strings should be in strings.xml
+        String trackName;
+        switch (position) {
+            case 0:
+                trackName = "Expo";
+                break;
+            case 1:
+                trackName = "Web";
+                break;
+            case 2:
+                trackName = "Mobile";
+                break;
+            default:
+                trackName = "DevFest SP";
         }
+
+        return trackName;
     }
 
     private void setSlidingTabLayoutContentDescriptions() {
-        for (int i = 0; i < Config.CONFERENCE_DAYS.length; i++) {
+        for (int i = 0; i < Config.CONFERENCE_TRACKS.length; i++) {
             mSlidingTabLayout.setContentDescription(i,
-                    getString(R.string.my_schedule_tab_desc_a11y, getDayName(i)));
+                    getString(R.string.my_schedule_tab_desc_a11y, getTrackName(i)));
         }
     }
 
@@ -359,9 +370,9 @@ public class MyScheduleActivity extends BaseActivity implements MyScheduleFragme
     }
 
     protected void updateData() {
-        for (int i = 0; i < Config.CONFERENCE_DAYS.length; i++) {
+        for (int i = 0; i < Config.CONFERENCE_TRACKS.length; i++) {
             mDataHelper.getScheduleDataAsync(mScheduleAdapters[i],
-                    Config.CONFERENCE_DAYS[i][0], Config.CONFERENCE_DAYS[i][1]);
+                    Config.CONFERENCE_TRACKS[i][0], Config.CONFERENCE_TRACKS[i][1]);
         }
     }
 
@@ -402,12 +413,12 @@ public class MyScheduleActivity extends BaseActivity implements MyScheduleFragme
 
         @Override
         public int getCount() {
-            return Config.CONFERENCE_DAYS.length;
+            return Config.CONFERENCE_TRACKS.length;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return getDayName(position);
+            return getTrackName(position);
         }
     }
 
