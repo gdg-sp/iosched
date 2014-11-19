@@ -510,7 +510,7 @@
 
     <!-- An application permission (this permission allows the application to modify the Google
     I/O schedule data). Shows on a permissions dialog screen. -->
-    <string name="permission_write">Modify Google I/O schedule data</string>
+    <string name="permission_write">Modify DevFest SP schedule data</string>
 
     <!-- Description of the Google+ +1 button for accessibility screen readers -->
     <string name="plus_one_description_standard">Touch to plus one.</string>
