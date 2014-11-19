@@ -606,7 +606,7 @@ public abstract class BaseActivity extends ActionBarActivity implements
         if (coverImageUrl != null) {
             mImageLoader.loadImage(coverImageUrl, coverImageView);
         } else {
-            coverImageView.setImageResource(R.drawable.default_cover);
+            coverImageView.setImageResource(R.drawable.default_cover_devfestsp);
         }
 
         email.setText(chosenAccount.name);
