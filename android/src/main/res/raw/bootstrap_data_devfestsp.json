@@ -117,7 +117,7 @@
       "name": "Pedro Kayatt",
       "company": "Naked Monkey",
       "plusoneUrl": "https://plus.google.com/+PedroKayatt",
-      "thumbnailUrl": "http://sp.devfest.com.br/img/speakers/",
+      "thumbnailUrl": "http://sp.devfest.com.br/img/speakers/pedro_kayatt.jpg",
       "id": "14"
     },
     {
@@ -292,85 +292,84 @@
     },
     {
       "speakers": [
-        "f184af29-46d2-e311-b297-00155d5066d7"
+        "8"
       ],
-      "description": "Aprenda sobre a origem e motivações da criação da linguagem Go. Além disso, serão mostrados vários exemplos pra mostrar do que a linguagem é capaz! Essa palestra é pra você.",
-      "title": "Conhecendo Go",
-      "photoUrl": "http://norte.devfest.com.br/img/speakers/gigante.png",
-      "url": "http://norte.devfest.com.br/",
-      "startTimestamp": "2014-11-01T11:30:00-03:00",
-      "endTimestamp": "2014-11-01T12:30:00-03:00",
+      "description": "",
+      "title": "Experimentos com Beacons Bluetooth",
+      "photoUrl": "http://sp.devfest.com.br/img/speakers/jeff_prestes.jpg",
+      "url": "https://plus.google.com/107984865640989254612",
+      "startTimestamp": "2014-11-22T15:10:00-02:00",
+      "endTimestamp": "2014-11-22T16:00:00-02:00",
       "tags": [
-        "TOPIC_WEB"
+        "TOPIC_EXPO"
       ],
-      "mainTag": "THEME_WEB",
+      "mainTag": "TOPIC_EXPO",
       "id": "f184af29-46d2-e311-b297-00155d5066d7",
       "color": "#005CE6",
-      "room": "solarium1",
-      "hashtag": "web",
+      "room": "",
+      "hashtag": "beacons",
       "isLivestream": false,
       "captionsUrl": ""
     },
     {
       "speakers": [
-        "bc11152b-c4cf-e311-b297-00155d5066d7"
+        "10"
       ],
-      "description": "Aprenda sobre as etapas do processo de produção e a utilização da ferramenta open-source LibGDX junto ao SDK do sistema operacional Android para criação de jogos 2D para smartphones.",
-      "title": "Desenvolvimento de Jogos para Android",
-      "photoUrl": "http://norte.devfest.com.br/img/speakers/lucas.png",
-      "url": "http://norte.devfest.com.br",
-      "startTimestamp": "2014-11-01T11:30:00-03:00",
-      "endTimestamp": "2014-11-01T12:30:00-03:00",
+      "description": "",
+      "title": "Entendendo o RecyclerView",
+      "photoUrl": "http://sp.devfest.com.br/img/speakers/ubiratan_soares.jpg",
+      "url": "https://plus.google.com/+UbiratanSoares",
+      "startTimestamp": "2014-11-22T16:30:00-02:00",
+      "endTimestamp": "2014-11-22T17:20:00-02:00",
       "tags": [
-        "TOPIC_ANDROID"
+        "TOPIC_EXPO"
       ],
-      "mainTag": "THEME_ANDROID",
+      "mainTag": "TOPIC_EXPO",
       "id": "bc11152b-c4cf-e311-b297-00155d5066d7",
       "color": "#B30000",
-      "room": "solarium2",
+      "room": "",
       "hashtag": "android",
       "isLivestream": false,
       "captionsUrl": ""
     },
     {
       "speakers": [
-        "554g1r23-sdf5-e311-b297-00155d5066d7"
+        "12"
       ],
-      "description": "Criar software é fácil... difícil é mante-lo! É por isso que a prática de Test Driven Development (TDD) vem sendo muito explorada pelas maiores empresas de desenvolvimento de software do mundo. Nesta palestra vou mostrar como criar testes automatizados para o seu código Javascript e Angular.js para aumentar a produtividade e confiança dos desenvolvedores do seu projeto.",
-      "title": "Desenvolvimento Orientado a Testes com AngularJS",
-      "photoUrl": "http://norte.devfest.com.br/img/speakers/ike.jpg",
-      "url": "http://norte.devfest.com.br",
-      "startTimestamp": "2014-11-01T13:30:00-03:00",
-      "endTimestamp": "2014-11-01T14:30:00-03:00",
+      "description": "",
+      "title": "Construindo apps móveis com a Plataforma Mobile do Twitter",
+      "photoUrl": "http://sp.devfest.com.br/img/speakers/luis_cipriani.jpg",
+      "url": "http://sp.devfest.com.br",
+      "startTimestamp": "2014-11-22T17:20:00-02:00",
+      "endTimestamp": "2014-11-22T18:10:00-02:00",
       "tags": [
-        "TOPIC_WEB"
+        "TOPIC_EXPO"
       ],
-      "mainTag": "THEME_WEB",
+      "mainTag": "TOPIC_EXPO",
       "id": "554g1r23-sdf5-e311-b297-00155d5066d7",
       "color": "#5900B3",
-      "room": "solarium2",
-      "hashtag": "web",
+      "room": "",
+      "hashtag": "mobile",
       "isLivestream": false,
       "captionsUrl": ""
     },
     {
       "speakers": [
-        "69058c1e-a6c6-e311-b297-00155d5066d7"
+        "14"
       ],
-      "description": "Saiba como tornar sua aplicação mais atraente e eficiente através de transições animadas (sem deixar seu usuário entediado!).",
-      "title": "Animando a UI: entregue uma experiência, não apenas um aplicativo",
-      "photoUrl": "http://norte.devfest.com.br/img/speakers/santiago.jpg",
-      "url": "http://norte.devfest.com.br",
-      "startTimestamp": "2014-11-01T13:30:00-03:00",
-      "endTimestamp": "2014-11-01T14:30:00-03:00",
+      "description": "",
+      "title": "Interface de games para diferentes telas",
+      "photoUrl": "http://sp.devfest.com.br/img/speakers/pedro_kayatt.jpg",
+      "url": "https://plus.google.com/+PedroKayatt",
+      "startTimestamp": "2014-11-22T18:10:00-02:00",
+      "endTimestamp": "2014-11-22T19:00:00-02:00",
       "tags": [
-        "TOPIC_DESIGN",
-        "TOPIC_ANDROID"
+        "TOPIC_EXPO"
       ],
-      "mainTag": "THEME_ANDROID",
+      "mainTag": "TOPIC_EXPO",
       "id": "69058c1e-a6c6-e311-b297-00155d5066d7",
       "color": "#00B3B3",
-      "room": "solarium2",
+      "room": "",
       "hashtag": "android",
       "isLivestream": false,
       "captionsUrl": ""
