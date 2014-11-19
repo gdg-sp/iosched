@@ -1029,7 +1029,7 @@ public abstract class BaseActivity extends ActionBarActivity implements
                 LOGD(TAG, "Starting data bootstrap process.");
                 try {
                     // Load data from bootstrap raw resource
-                    String bootstrapJson = JSONHandler.parseResource(appContext, R.raw.bootstrap_data_devfestnorte);
+                    String bootstrapJson = JSONHandler.parseResource(appContext, R.raw.bootstrap_data_devfestsp);
 
                     // Apply the data we read to the database with the help of the ConferenceDataHandler
                     ConferenceDataHandler dataHandler = new ConferenceDataHandler(appContext);
