@@ -1012,7 +1012,7 @@ public abstract class BaseActivity extends ActionBarActivity implements
             performDataBootstrap();
 //        }
 
-        startLoginProcess();
+//        startLoginProcess();
     }
 
     /**
